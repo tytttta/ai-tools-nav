@@ -166,5 +166,131 @@ export const tools: AITool[] = [
       }
     ],
     seoKeywords: ["Writesonic", "GEO 优化", "AI 搜索可见性", "AI Search Growth Engine", "品牌 AI 监测"]
+  },
+
+  {
+    id: "20",
+    slug: "gamma",
+    name: "Gamma",
+    description: "用 AI 快速生成演示文稿与文档页面的效率工具。",
+    longDescription:
+      "Gamma 可根据主题一键生成演示结构、页面文案和视觉排版，适合汇报、培训和提案场景，提高内容交付效率。",
+    icon: "gamma",
+    category: "效率",
+    tags: ["PPT", "汇报", "文档"],
+    websiteUrl: "https://gamma.app/",
+    affiliateUrl: "https://example.com/affiliate/gamma",
+    features: ["一键生成演示", "自动排版", "在线分享"],
+    useCases: ["项目汇报", "销售提案", "培训资料"],
+    pros: ["产出速度快", "视觉一致性好"],
+    cons: ["深度品牌定制能力有限"],
+    pricingPlans: [
+      {
+        name: "Free",
+        price: "$0",
+        billingCycle: "月",
+        features: ["基础文档与演示", "有限 AI 额度"]
+      },
+      {
+        name: "Plus",
+        price: "$10",
+        billingCycle: "月起",
+        features: ["更高生成额度", "高级导出能力"]
+      }
+    ],
+    seoKeywords: ["Gamma", "AI演示工具", "AI文档生成"]
+  },
+
+  {
+    id: "14",
+    slug: "heygen",
+    name: "HeyGen",
+    description: "AI 数字人视频生成平台，适合营销和培训内容制作。",
+    longDescription:
+      "HeyGen 支持数字人播报、多语言配音与模板化视频生成，可快速产出产品介绍、课程讲解和推广内容。",
+    icon: "heygen",
+    category: "视频",
+    tags: ["数字人", "多语言", "视频营销"],
+    websiteUrl: "https://www.heygen.com/",
+    affiliateUrl: "https://example.com/affiliate/heygen",
+    features: ["数字人模板", "多语言配音", "文本转视频"],
+    useCases: ["营销宣传", "课程讲解", "产品演示"],
+    pros: ["出片速度快", "适合批量内容生产"],
+    cons: ["高级模板与额度依赖付费方案"],
+    pricingPlans: [
+      {
+        name: "Creator",
+        price: "$29",
+        billingCycle: "月起",
+        features: ["基础视频生成", "标准素材模板"]
+      }
+    ],
+    seoKeywords: ["HeyGen", "AI视频", "数字人视频"]
+  },
+
+  {
+    id: "19",
+    slug: "canva-magic-studio",
+    name: "Canva Magic Studio",
+    description: "将设计模板与 AI 生成功能结合的一体化创意平台。",
+    longDescription:
+      "Canva Magic Studio 支持文案生成、图片扩展、素材替换和品牌套版，适合营销与设计团队高效产出视觉内容。",
+    icon: "canva",
+    category: "图像",
+    tags: ["平面设计", "营销素材", "模板"],
+    websiteUrl: "https://www.canva.com/magic-studio/",
+    affiliateUrl: "https://example.com/affiliate/canva-magic-studio",
+    features: ["模板化设计", "AI 图像编辑", "品牌套件"],
+    useCases: ["社媒海报", "活动视觉", "品牌素材"],
+    pros: ["模板资源丰富", "团队协作方便"],
+    cons: ["高度定制设计仍需专业工具"],
+    pricingPlans: [
+      {
+        name: "Free",
+        price: "$0",
+        billingCycle: "月",
+        features: ["基础模板与编辑", "有限 AI 功能"]
+      },
+      {
+        name: "Pro",
+        price: "$14.99",
+        billingCycle: "月起",
+        features: ["更多高级模板", "更完整 AI 能力"]
+      }
+    ],
+    seoKeywords: ["Canva Magic Studio", "AI设计", "营销素材"]
+  },
+
+  {
+    id: "13",
+    slug: "leonardo-ai",
+    name: "Leonardo AI",
+    description: "适合营销和设计团队的 AI 图像生成工具。",
+    longDescription:
+      "Leonardo AI 提供模型风格控制、素材批量生成和图像细节调整，适合电商素材、品牌视觉和社媒创意制作。",
+    icon: "leonardo",
+    category: "图像",
+    tags: ["设计", "电商", "视觉素材"],
+    websiteUrl: "https://leonardo.ai/",
+    affiliateUrl: "https://example.com/affiliate/leonardo-ai",
+    features: ["风格控制", "批量出图", "图像增强"],
+    useCases: ["电商主图", "社媒海报", "品牌视觉"],
+    pros: ["产出效率高", "参数控制灵活"],
+    cons: ["复杂风格需多轮调参"],
+    pricingPlans: [
+      {
+        name: "Free",
+        price: "$0",
+        billingCycle: "月",
+        features: ["基础额度", "标准图像生成"]
+      },
+      {
+        name: "Apprentice",
+        price: "$12",
+        billingCycle: "月起",
+        features: ["更高积分", "更多高级功能"]
+      }
+    ],
+    seoKeywords: ["Leonardo AI", "AI绘图", "设计工具"]
   }
 ];
