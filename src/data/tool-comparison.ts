@@ -34,7 +34,7 @@ export const aiWritingComparison: ToolComparisonItem[] = [
   {
     slug: "writesonic",
     name: "Writesonic",
-    freeQuota: "可免费试用，无需信用卡",
+    freeQuota: "7 天免费试用（无需信用卡）",
     monthlyPriceUsd: 99,
     priceLabel: "$99 / 月起",
     features: "AI 搜索可见性跟踪、竞品推荐分析、AI Agent 修复、SEO + GEO 一体",

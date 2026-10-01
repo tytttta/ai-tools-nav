@@ -106,18 +106,39 @@ export const tools: AITool[] = [
     id: "10",
     slug: "writesonic",
     name: "Writesonic",
-    description: "面向品牌的 AI 搜索可见性（GEO）平台，跟踪并优化品牌在 ChatGPT、Gemini 等 AI 中的推荐表现。",
+    description: "AI 搜索增长引擎（GEO 平台）：跟踪品牌在 ChatGPT、Gemini、Google AI Overviews 等 AI 中的可见性，并用内容与引用修复缺口。",
     longDescription:
-      "Writesonic 已从早期的 AI 写作工具转型为 AI 搜索可见性（GEO）平台：它跟踪你的品牌在 ChatGPT、Gemini、Google AI Overviews 等 AI 平台中被如何提及与推荐，找出哪些提问在推荐竞品而不是你，再用 AI Agent 与内容生产去修复这些可见性缺口。适合需要监测品牌 AI 曝光、做 GEO/SEO 一体优化的营销团队与代理商。",
+      "Writesonic 现在的定位是「AI 搜索增长引擎」，已不是早期的 AI 写作工具。它的主张是 SEO 工具不管 AI、AI 追踪工具不管 SEO，而它两者都做：先追踪你的品牌在 ChatGPT、Gemini、Google AI Overviews 等 AI 平台中被提及和推荐的情况，找出哪些提问在推荐竞品而不是你，然后按影响排序给出待办（内容改写、外部引用、技术修复），由 AI Agent 执行并在第 14 / 28 天验证提升效果，再进入下一轮循环。适合需要监测品牌 AI 曝光并把可见性变成获客渠道的品牌方、代理商与增长团队。",
     icon: "writesonic",
     category: "营销",
-    tags: ["GEO", "品牌监测", "SEO", "AI 可见性"],
+    tags: ["GEO", "AI 可见性", "品牌监测", "SEO"],
     websiteUrl: "https://writesonic.com/",
     affiliateUrl: "https://example.com/affiliate/writesonic",
-    features: ["AI 搜索可见性跟踪", "竞品推荐对比分析", "AI Agent 修复工作流", "SEO + GEO 一体化"],
-    useCases: ["品牌 AI 曝光监测", "GEO / SEO 优化", "代理商客户提案"],
-    pros: ["GEO 赛道定位清晰，覆盖多个主流 AI 平台", "SEO 与 GEO 一体，适合已有内容团队"],
-    cons: ["定价较高，入门档即 $99/月，不适合个人用户", "属于品牌侧工具，个人内容创作者性价比低"],
+    features: [
+      "追踪品牌在多个 AI 平台中的可见性",
+      "分析 AI 引用来源并获取外部引用",
+      "Action Center 按影响排序待修复项",
+      "AI Agent 改写内容以适配 GEO",
+      "技术项审计（robots.txt / schema / 索引）",
+      "修复后按 Day 14 / Day 28 衡量提升"
+    ],
+    useCases: [
+      "品牌 AI 曝光监测",
+      "GEO 与 SEO 一体化优化",
+      "代理商多客户管理与白标报告",
+      "增长团队补齐 AI 搜索渠道",
+      "电商产品进入 AI 推荐"
+    ],
+    pros: [
+      "把 AI 可见性从「只看数据」推进到「自动执行修复」",
+      "SEO 与 GEO 统一评分，不用在多个工具间来回切",
+      "覆盖企业、代理商、增长团队与电商四类场景"
+    ],
+    cons: [
+      "定价面向企业，入门档即 $99/月，个人用户性价比低",
+      "依赖人工判断的营销策略，不能全自动替代运营",
+      "侧重 AI 搜索单一渠道，通用写作能力不是它的强项"
+    ],
     pricingPlans: [
       {
         name: "Starter",
@@ -144,6 +165,6 @@ export const tools: AITool[] = [
         features: ["全量 SEO + GEO", "全部 10 个 AI 平台", "专属策略团队"]
       }
     ],
-    seoKeywords: ["Writesonic", "GEO 优化", "AI 搜索可见性", "品牌 AI 监测"]
+    seoKeywords: ["Writesonic", "GEO 优化", "AI 搜索可见性", "AI Search Growth Engine", "品牌 AI 监测"]
   }
 ];
