@@ -100,5 +100,32 @@ export const tools: AITool[] = [
     tags: ["SEO", "广告", "内容营销"],
     websiteUrl: "https://www.jasper.ai/",
     affiliateUrl: "https://example.com/affiliate/jasper"
+  },
+
+  {
+    id: "10",
+    slug: "writesonic",
+    name: "Writesonic",
+    description: "支持博客、SEO 和品牌内容生成的一体化写作平台。",
+    longDescription:
+      "Writesonic 适合内容运营与 SEO 团队，能快速生成文章草稿、标题方案和改写版本，缩短内容生产周期。",
+    icon: "writesonic",
+    category: "写作",
+    tags: ["SEO", "博客", "内容运营"],
+    websiteUrl: "https://writesonic.com/",
+    affiliateUrl: "https://example.com/affiliate/writesonic",
+    features: ["SEO 文章生成", "博客改写", "内容扩展"],
+    useCases: ["内容运营", "SEO 团队", "站点增长"],
+    pros: ["内容场景覆盖广", "价格门槛较低"],
+    cons: ["专业内容需人工润色"],
+    pricingPlans: [
+      {
+        name: "Basic",
+        price: "$16",
+        billingCycle: "月起",
+        features: ["基础生成额度", "SEO 写作工具"]
+      }
+    ],
+    seoKeywords: ["Writesonic", "SEO写作", "博客生成"]
   }
 ];
