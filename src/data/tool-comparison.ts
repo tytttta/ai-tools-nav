@@ -14,7 +14,9 @@ export interface ToolComparisonItem {
 /**
  * 示例对比数据：只包含开源版内置的工具，避免对比表出现死链。
  * 对比页是商业意图最强的页面（用户正在做购买决策），建议给有联盟佣金的工具单独做对比页。
- * 你可以按同样的结构添加自己的对比组合（例如「AI 视频工具」「AI 编程工具」）。
+ *
+ * monthlyPriceUsd 仅用于排序，请填官网标价的起步价（数值，不带货币符号）。
+ * 价格为整理时点的信息，会随时间变动——页面下方已加统一提示，你也可以自行核对更新。
  */
 export const aiWritingComparison: ToolComparisonItem[] = [
   {
@@ -32,13 +34,13 @@ export const aiWritingComparison: ToolComparisonItem[] = [
   {
     slug: "writesonic",
     name: "Writesonic",
-    freeQuota: "有免费试用，按积分和套餐限制",
-    monthlyPriceUsd: 16,
-    priceLabel: "$16 / 月起",
-    features: "SEO 文章生成、博客扩写、内容改写、品牌文案",
-    useCases: "SEO 内容、博客运营、内容团队",
-    pros: "内容运营场景覆盖广、性价比高",
-    cons: "复杂场景需要人工二次润色",
+    freeQuota: "可免费试用，无需信用卡",
+    monthlyPriceUsd: 99,
+    priceLabel: "$99 / 月起",
+    features: "AI 搜索可见性跟踪、竞品推荐分析、AI Agent 修复、SEO + GEO 一体",
+    useCases: "品牌 AI 曝光监测、GEO / SEO 优化、代理商提案",
+    pros: "GEO 定位清晰，覆盖多个主流 AI 平台",
+    cons: "定价偏高，个人创作者性价比低",
     signupUrl: "https://writesonic.com/"
   },
   {

@@ -106,26 +106,44 @@ export const tools: AITool[] = [
     id: "10",
     slug: "writesonic",
     name: "Writesonic",
-    description: "支持博客、SEO 和品牌内容生成的一体化写作平台。",
+    description: "面向品牌的 AI 搜索可见性（GEO）平台，跟踪并优化品牌在 ChatGPT、Gemini 等 AI 中的推荐表现。",
     longDescription:
-      "Writesonic 适合内容运营与 SEO 团队，能快速生成文章草稿、标题方案和改写版本，缩短内容生产周期。",
+      "Writesonic 已从早期的 AI 写作工具转型为 AI 搜索可见性（GEO）平台：它跟踪你的品牌在 ChatGPT、Gemini、Google AI Overviews 等 AI 平台中被如何提及与推荐，找出哪些提问在推荐竞品而不是你，再用 AI Agent 与内容生产去修复这些可见性缺口。适合需要监测品牌 AI 曝光、做 GEO/SEO 一体优化的营销团队与代理商。",
     icon: "writesonic",
-    category: "写作",
-    tags: ["SEO", "博客", "内容运营"],
+    category: "营销",
+    tags: ["GEO", "品牌监测", "SEO", "AI 可见性"],
     websiteUrl: "https://writesonic.com/",
     affiliateUrl: "https://example.com/affiliate/writesonic",
-    features: ["SEO 文章生成", "博客改写", "内容扩展"],
-    useCases: ["内容运营", "SEO 团队", "站点增长"],
-    pros: ["内容场景覆盖广", "价格门槛较低"],
-    cons: ["专业内容需人工润色"],
+    features: ["AI 搜索可见性跟踪", "竞品推荐对比分析", "AI Agent 修复工作流", "SEO + GEO 一体化"],
+    useCases: ["品牌 AI 曝光监测", "GEO / SEO 优化", "代理商客户提案"],
+    pros: ["GEO 赛道定位清晰，覆盖多个主流 AI 平台", "SEO 与 GEO 一体，适合已有内容团队"],
+    cons: ["定价较高，入门档即 $99/月，不适合个人用户", "属于品牌侧工具，个人内容创作者性价比低"],
     pricingPlans: [
       {
+        name: "Starter",
+        price: "$99",
+        billingCycle: "月付",
+        features: ["品牌在 ChatGPT / Gemini / Google AI Overviews 的跟踪", "AI 文章与站点审计"]
+      },
+      {
         name: "Basic",
-        price: "$16",
-        billingCycle: "月起",
-        features: ["基础生成额度", "SEO 写作工具"]
+        price: "$249",
+        billingCycle: "月付",
+        features: ["SEO + GEO 一体化", "品牌跟踪与可见性缺口修复"]
+      },
+      {
+        name: "Growth",
+        price: "$499",
+        billingCycle: "月付",
+        features: ["AI 可见性跟踪并可直接执行优化", "舆情分析、Action Center、Agent 工作流"]
+      },
+      {
+        name: "Enterprise",
+        price: "定制",
+        billingCycle: "按需报价",
+        features: ["全量 SEO + GEO", "全部 10 个 AI 平台", "专属策略团队"]
       }
     ],
-    seoKeywords: ["Writesonic", "SEO写作", "博客生成"]
+    seoKeywords: ["Writesonic", "GEO 优化", "AI 搜索可见性", "品牌 AI 监测"]
   }
 ];

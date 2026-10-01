@@ -20,6 +20,11 @@ function renderList(items: string[] | undefined, fallback: string) {
 }
 
 export function ToolDetailContent({ tool, relatedTools }: ToolDetailContentProps) {
+  // 只有指向真实联盟追踪链接时才显示「注册 / 购买」按钮并标注 sponsored，
+  // 否则会把普通官网地址误标为赞助链接（对搜索引擎是错误信号）。
+  const hasRealAffiliate =
+    Boolean(tool.affiliateUrl) && !tool.affiliateUrl.includes("example.com");
+
   return (
     <main className="space-y-6">
       <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -50,16 +55,18 @@ export function ToolDetailContent({ tool, relatedTools }: ToolDetailContentProps
             rel="noreferrer"
             className="rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
           >
-            官方链接
+            访问官网
           </Link>
-          <Link
-            href={tool.affiliateUrl}
-            target="_blank"
-            rel="sponsored noreferrer"
-            className="rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white hover:bg-brand-700"
-          >
-            注册 / 购买（Affiliate）
-          </Link>
+          {hasRealAffiliate ? (
+            <Link
+              href={tool.affiliateUrl}
+              target="_blank"
+              rel="sponsored noreferrer"
+              className="rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white hover:bg-brand-700"
+            >
+              注册 / 购买（Affiliate）
+            </Link>
+          ) : null}
         </div>
       </section>
 
@@ -98,6 +105,9 @@ export function ToolDetailContent({ tool, relatedTools }: ToolDetailContentProps
         ) : (
           <p className="text-sm text-slate-600">暂无公开价格表，可通过官方链接查看最新报价。</p>
         )}
+        <p className="mt-4 text-xs text-slate-500">
+          价格为整理时点的信息，可能已经变动，请以官网为准。
+        </p>
       </section>
 
       <section className="grid grid-cols-1 gap-4 lg:grid-cols-2">

@@ -112,7 +112,11 @@ export function ComparisonTable({ items }: ComparisonTableProps) {
                   <Link
                     href={item.signupUrl}
                     target="_blank"
-                    rel="sponsored noreferrer"
+                    rel={
+                      item.signupUrl.includes("example.com")
+                        ? "noreferrer"
+                        : "sponsored noreferrer"
+                    }
                     className="inline-flex rounded-lg bg-brand-600 px-3 py-1.5 font-medium text-white hover:bg-brand-700"
                   >
                     去注册
@@ -123,6 +127,10 @@ export function ComparisonTable({ items }: ComparisonTableProps) {
           </tbody>
         </table>
       </div>
+
+      <p className="text-xs text-slate-500">
+        价格与免费额度为整理时点的信息，可能已经变动，请以官网为准。注册链接可能包含联盟追踪参数。
+      </p>
     </section>
   );
 }
