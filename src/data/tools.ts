@@ -66,14 +66,65 @@ export const tools: AITool[] = [
     id: "4",
     slug: "runway",
     name: "Runway",
-    description: "AI 视频生成与编辑平台，适合短视频和创意制作。",
+    description: "AI 视频生成与编辑平台，从文本或图片生成视频，并提供完整的后期编辑工具链。",
     longDescription:
-      "Runway 提供文本生成视频、背景替换、镜头扩展等能力，适合内容团队快速完成视频创作和后期处理。",
+      "Runway 是面向创作者的 AI 视频平台：支持文本生成视频、图生视频、背景替换、镜头扩展与 4K 放大，并提供帧级精确的协作评论。所有套餐按积分（credits）计费，不同档位对应不同的并行生成数量、项目数和素材存储。个人档适合独立创作者，团队档适合有高产能需求的制作团队。",
     icon: "runway",
     category: "视频",
-    tags: ["短视频", "剪辑", "生成式视频"],
-    websiteUrl: "https://runwayml.com/",
-    affiliateUrl: "https://example.com/affiliate/runway"
+    tags: ["短视频", "剪辑", "生成式视频", "AI 视频"],
+    websiteUrl: "https://runway.com/",
+    affiliateUrl: "https://example.com/affiliate/runway",
+    features: [
+      "文本生成视频、图生视频",
+      "并行生成多条视频与图像",
+      "音乐、配音与音效生成",
+      "4K 画质放大",
+      "帧级精确的协作评论（@ 提及）",
+      "品牌套件与自定义语音克隆"
+    ],
+    useCases: [
+      "短视频与社媒内容制作",
+      "广告与创意短片",
+      "概念视觉与分镜预览",
+      "团队协作的视频生产流程"
+    ],
+    pros: [
+      "生成质量在同类工具中领先",
+      "编辑工具链完整，从生成到后期一站完成",
+      "免费档含 125 一次性积分，可直接试跑"
+    ],
+    cons: [
+      "按积分计费，高频使用成本上升较快",
+      "免费档积分是一次性的，不是每月刷新",
+      "团队档按席位计费，$69/席位/月门槛不低"
+    ],
+    pricingPlans: [
+      {
+        name: "Free",
+        price: "$0",
+        billingCycle: "月付",
+        features: ["125 一次性积分", "部分生成模型试用", "5GB 素材存储"]
+      },
+      {
+        name: "Standard",
+        price: "$15（年付 $12）",
+        billingCycle: "月付",
+        features: ["625 积分/月", "并行生成 5 条视频与图像", "最多 3 个项目", "去水印", "4K 放大", "20GB 存储"]
+      },
+      {
+        name: "Pro",
+        price: "$35（年付 $28）",
+        billingCycle: "月付",
+        features: ["2250 积分/月", "并行生成 15 条视频与图像", "最多 5 个项目", "1 个品牌套件", "1 个自定义语音克隆"]
+      },
+      {
+        name: "Max",
+        price: "$95（年付 $76）",
+        billingCycle: "月付",
+        features: ["9500 积分/月", "并行生成 20 条视频与图像", "最多 10 个项目", "3 个品牌套件", "3 个自定义语音克隆", "未用积分可结转 1 个月"]
+      }
+    ],
+    seoKeywords: ["Runway", "AI 视频生成", "文生视频", "AI 剪辑工具", "Runway 价格"]
   },
   {
     id: "5",
