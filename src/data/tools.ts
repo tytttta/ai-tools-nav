@@ -263,33 +263,65 @@ export const tools: AITool[] = [
     id: "20",
     slug: "gamma",
     name: "Gamma",
-    description: "用 AI 快速生成演示文稿与文档页面的效率工具。",
+    description: "用 AI 生成演示文稿、文档与网页，按席位计费的团队协作型创作工具。",
     longDescription:
-      "Gamma 可根据主题一键生成演示结构、页面文案和视觉排版，适合汇报、培训和提案场景，提高内容交付效率。",
+      "Gamma 用 AI 把想法直接变成可演示的内容：输入主题即可生成演示文稿、文档或网页，并支持从 PDF 与 PPTX 导入既有材料。所有套餐按使用额度（credits）计费——免费档注册即得 400 额度，付费档为每月额度并逐级提升单次生成上限（10 张 / 100 张幻灯片）。高级档位加入自定义品牌、详细分析、API 访问与自定义域名。按年付费最多可节省 28%。",
     icon: "gamma",
     category: "效率",
-    tags: ["PPT", "汇报", "文档"],
+    tags: ["演示文稿", "PPT", "AI 生成", "文档"],
     websiteUrl: "https://gamma.app/",
     affiliateUrl: "https://example.com/affiliate/gamma",
-    features: ["一键生成演示", "自动排版", "在线分享"],
-    useCases: ["项目汇报", "销售提案", "培训资料"],
-    pros: ["产出速度快", "视觉一致性好"],
-    cons: ["深度品牌定制能力有限"],
+    features: [
+      "一句话生成演示文稿、文档与网页",
+      "支持从 PDF 与 PPTX 导入",
+      "单次提示最多生成 100 张幻灯片",
+      "自定义品牌与主题",
+      "详细分析与高级分享",
+      "API 访问与自定义域名（高级档）"
+    ],
+    useCases: [
+      "快速产出汇报与提案演示",
+      "社交媒体与营销素材",
+      "把既有 PPT / PDF 转成新格式",
+      "团队统一品牌模板"
+    ],
+    pros: [
+      "免费档无需信用卡，注册即得 400 额度，上手门槛低",
+      "从 PDF / PPTX 导入，迁移既有材料方便",
+      "按年付费可省约 28%，团队规模越大越划算"
+    ],
+    cons: [
+      "免费档带 Gamma 品牌标识，去标需升级 Plus",
+      "按席位计费，团队使用成本随人数线性上升",
+      "额度按月计算，重度使用可能提前耗尽"
+    ],
     pricingPlans: [
       {
         name: "Free",
-        price: "$0",
-        billingCycle: "月",
-        features: ["基础文档与演示", "有限 AI 额度"]
+        price: "US$0",
+        billingCycle: "月付",
+        features: ["注册即得 400 使用额度", "单次提示最多 10 张幻灯片", "演示文稿 / 文档 / 网页 / 社交媒体", "支持从 PDF 与 PPTX 导入"]
       },
       {
         name: "Plus",
-        price: "$10",
-        billingCycle: "月起",
-        features: ["更高生成额度", "高级导出能力"]
+        price: "US$12（按年付 US$9）",
+        billingCycle: "每席位/月",
+        features: ["每月 1,000 使用额度", "单次提示最多 100 张幻灯片", "移除 Gamma 品牌标识", "先进的 AI 图像模型"]
+      },
+      {
+        name: "Pro",
+        price: "US$25（按年付 US$18）",
+        billingCycle: "每席位/月",
+        features: ["每月 4,000 使用额度", "高级 AI 图像模型", "自定义品牌", "详细分析和高级分享", "发布多达 10 个自定义域名", "API 访问权限"]
+      },
+      {
+        name: "Ultra",
+        price: "US$100（按年付 US$90）",
+        billingCycle: "每席位/月",
+        features: ["每月 20,000 使用额度", "访问最先进的 AI 模型（文本、图像、视频）", "发布多达 100 个自定义域名", "抢先体验新功能"]
       }
     ],
-    seoKeywords: ["Gamma", "AI演示工具", "AI文档生成"]
+    seoKeywords: ["Gamma", "Gamma 价格", "AI 生成 PPT", "AI 演示文稿工具"]
   },
 
   {
