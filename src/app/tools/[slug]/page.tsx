@@ -17,6 +17,9 @@ export function generateStaticParams() {
   }));
 }
 
+export const dynamicParams = false;
+export const revalidate = 3600;
+
 export function generateMetadata({ params }: ToolDetailPageProps): Metadata {
   const tool = getToolBySlug(params.slug);
   if (!tool) {

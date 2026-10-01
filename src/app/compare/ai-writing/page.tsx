@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { ComparisonTable } from "@/components/comparison-table";
 import { aiWritingComparison } from "@/data/tool-comparison";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "AI写作工具对比 - AI 工具导航",
   description: "对比主流 AI 写作工具的价格、免费额度、适用场景、优缺点与注册链接。"

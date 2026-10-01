@@ -3,6 +3,8 @@ import { ToolGrid } from "@/components/tool-grid";
 import { filterTools } from "@/lib/tool-utils";
 import { ToolCategory } from "@/types/tool";
 
+export const revalidate = 3600;
+
 interface HomePageProps {
   searchParams: {
     q?: string;

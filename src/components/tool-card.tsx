@@ -9,7 +9,7 @@ interface ToolCardProps {
 
 export function ToolCard({ tool }: ToolCardProps) {
   return (
-    <article className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+    <article className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
       <div className="mb-4 flex items-start justify-between">
         <div className="flex items-center gap-3">
           <div className="rounded-xl bg-slate-100 p-2">
@@ -35,7 +35,7 @@ export function ToolCard({ tool }: ToolCardProps) {
         ))}
       </div>
 
-      <div className="flex items-center justify-between">
+      <div className="mt-auto flex items-center justify-between">
         <Link
           href={`/tools/${tool.slug}`}
           className="text-sm font-medium text-brand-700 group-hover:text-brand-600"
