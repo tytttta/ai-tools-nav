@@ -143,14 +143,54 @@ export const tools: AITool[] = [
     id: "6",
     slug: "jasper",
     name: "Jasper",
-    description: "面向营销团队的 AI 内容生产平台。",
+    description: "面向营销团队的 AI 平台：用 AI Agents 维持品牌一致性，并把内容生产流程规模化。",
     longDescription:
-      "Jasper 支持品牌语气管理、广告文案生成、SEO 内容扩展与活动推广素材制作，适合增长和营销团队。",
+      "Jasper 是面向营销团队的企业级 AI 平台。它围绕品牌一致性设计：通过 Brand Voices、Knowledge assets（知识资产）和 Audiences（受众）三类配置，让 AI 产出始终符合品牌语气。Pro 档按席位计费，含 Canvas 内容创作平台与核心营销工作流的 AI Agents；Business 档在其之上加入复杂营销工作流（GEO、翻译、深度研究）、无代码 AI Agent 构建器、Jasper Grid 与 API 访问。提供 7 天免费试用。",
     icon: "jasper",
     category: "营销",
-    tags: ["SEO", "广告", "内容营销"],
+    tags: ["营销", "品牌一致性", "AI Agent", "内容规模化"],
     websiteUrl: "https://www.jasper.ai/",
-    affiliateUrl: "https://example.com/affiliate/jasper"
+    affiliateUrl: "https://example.com/affiliate/jasper",
+    features: [
+      "Canvas 平台，加速品牌一致的内容创作",
+      "核心营销工作流的 AI Agents",
+      "品牌语气与知识资产管理",
+      "多受众定向（Audiences）",
+      "无代码 AI Agent 构建器（Business）",
+      "Jasper Grid 系统性内容执行（Business）",
+      "API 访问（Business）"
+    ],
+    useCases: [
+      "营销团队规模化内容生产",
+      "品牌语气统一管理",
+      "代理商为客户批量产出内容",
+      "复杂营销工作流自动化"
+    ],
+    pros: [
+      "品牌一致性控制强，适合多人协作的营销团队",
+      "提供 7 天免费试用，可先验证再付费",
+      "Business 档可自建 AI Agent，扩展性高"
+    ],
+    cons: [
+      "按席位计费，Pro 档 $69/席位/月，小团队成本不低",
+      "没有长期免费档，只有 7 天试用",
+      "面向团队设计，个人创作者性价比低"
+    ],
+    pricingPlans: [
+      {
+        name: "Pro",
+        price: "$69（年付 $59）",
+        billingCycle: "每席位/月",
+        features: ["含 1 个席位", "Canvas 内容创作平台", "核心营销工作流 AI Agents", "2 个品牌语气、5 个知识资产、3 个受众"]
+      },
+      {
+        name: "Business",
+        price: "定制报价",
+        billingCycle: "按需报价",
+        features: ["包含 Pro 全部功能", "复杂工作流 Agent（GEO、翻译、深度研究）", "无代码 AI Agent 构建器", "Jasper Grid", "无限品牌语气/知识资产/受众", "API 访问"]
+      }
+    ],
+    seoKeywords: ["Jasper", "Jasper AI 价格", "AI 营销平台", "品牌一致性工具"]
   },
 
   {

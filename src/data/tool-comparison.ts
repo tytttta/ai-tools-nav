@@ -46,13 +46,13 @@ export const aiWritingComparison: ToolComparisonItem[] = [
   {
     slug: "jasper",
     name: "Jasper",
-    freeQuota: "无长期免费版，提供试用额度",
-    monthlyPriceUsd: 39,
-    priceLabel: "$39 / 月起",
-    features: "品牌语气管理、广告文案、SEO 内容扩展、活动素材",
-    useCases: "增长团队、营销文案、广告投放",
-    pros: "营销场景模板丰富、品牌一致性控制强",
-    cons: "价格偏高，通用推理能力不如通用大模型",
+    freeQuota: "7 天免费试用",
+    monthlyPriceUsd: 69,
+    priceLabel: "$69 / 席位 / 月起",
+    features: "Canvas 创作平台、品牌语气与知识资产、营销工作流 AI Agents、无代码 Agent 构建器",
+    useCases: "营销团队内容规模化、品牌一致性管理、代理商批量产出",
+    pros: "品牌一致性控制强，适合多人协作",
+    cons: "按席位计费，小团队成本不低，无长期免费档",
     signupUrl: "https://www.jasper.ai/"
   },
   {
