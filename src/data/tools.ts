@@ -447,5 +447,20 @@ export const tools: AITool[] = [
       }
     ],
     seoKeywords: ["Leonardo AI", "AI绘图", "设计工具"]
+  },
+  {
+    id: "21",
+    slug: "agent-qa",
+    name: "agent-qa",
+    description: "自然语言 Web、Android 与 iOS 测试，结合 memidex 持久记忆和经验证的自我改进。",
+    longDescription:
+      "agent-qa 通过命令行和 MCP 接口把自然语言测试接入开发工作流。memidex 持久记忆保存可复用的测试经验，经验证的自我改进帮助后续测试利用已验证的经验。CLI 可免费使用，配置的 AI 模型服务可能产生费用。",
+    icon: "agent-qa",
+    category: "代码",
+    tags: ["自动化测试", "持久记忆", "MCP"],
+    websiteUrl: "https://vostride.com",
+    affiliateUrl: "",
+    features: ["自然语言 Web 与移动端测试", "memidex 持久记忆", "经验证的自我改进", "CLI 与 MCP 接口"],
+    useCases: ["网页和移动应用功能验证", "开发工作流中的重复测试", "编码智能体调用测试能力"]
   }
 ];
